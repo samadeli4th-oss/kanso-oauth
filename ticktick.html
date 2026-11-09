@@ -8,9 +8,9 @@
 <body style="font-family:sans-serif;padding:32px;text-align:center">
 <!-- TickTick only accepts https redirect URLs. TickTick sends the browser here with ?code=...&state=...;
      this page passes them on to the Kanso app. It holds no secrets. -->
-<script>location.replace("com.omid_dx.kanso://ticktick-callback" + location.search)</script>
+<script>location.replace("kanso://ticktick-callback" + location.search)</script>
 <h2>Back to Kanso</h2>
-<p><a href="com.omid_dx.kanso://ticktick-callback" id="open" style="font-size:18px">Open Kanso</a></p>
-<script>document.getElementById("open").href = "com.omid_dx.kanso://ticktick-callback" + location.search</script>
+<p><a href="kanso://ticktick-callback" id="open" style="font-size:18px">Open Kanso</a></p>
+<script>document.getElementById("open").href = "kanso://ticktick-callback" + location.search</script>
 </body>
 </html>
